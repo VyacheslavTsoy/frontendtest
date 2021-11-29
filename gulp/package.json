@@ -1,0 +1,19 @@
+{
+  "name": "vtsoy_base",
+  "version": "1.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass-chokidar ../scss/ -o ../css/ --watch"
+  },
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sourcemaps": "^3.0.0",
+    "locomotive-scroll": "^4.0.6",
+    "node-sass-chokidar": "^1.3.5",
+    "run-sequence": "^1.2.2"
+  },
+  "devDependencies": {},
+  "author": "vtsoy_base",
+  "license": "ISC"
+}

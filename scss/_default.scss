@@ -1,0 +1,211 @@
+@import 'vars';
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  font-size: $font-size;
+  line-height: $line-height;
+  color: $color;
+  background: #fff;
+  font-family: $font-family, sans-serif;
+  font-weight: normal;
+  font-style: normal;
+
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+*{
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+button, input{
+  font-family: $font-family, sans-serif;
+  outline: none;
+}
+
+::selection,
+::-moz-selection {
+  background: #000;
+  color: #fff;
+}
+
+/*----------------------> Links And buttons <------------------*/
+a {
+  color: #fff;
+  outline:none;
+  text-decoration:none;
+  cursor:pointer;
+}
+a:hover{
+  color: $color;
+  text-decoration:none;
+}
+
+.btn{
+  display:inline-block;
+  padding:0 0 0;
+  margin: 0 0 0;
+  font-size: px;
+  line-height: px;
+  color: #fff;
+ }
+
+  .btn:hover{
+    background:$color;
+    color:#000;
+  }
+
+/*=====================> Lists ========================*/
+.list-1{}
+  .list-1 li{
+    background:url(../images/marker1.png) 0 7px no-repeat;
+    padding-left:20px;
+  }
+    .list-1 a{}
+
+/*=====================> Titles ========================*/
+h1,h2,h3,h4,h5,h6{
+  font-weight:normal;
+}
+
+.title-1{
+  font-size: $title-1;
+  line-height: $line-height;
+  color: $accent-color;
+}
+
+.title-2{
+  font-size: $title-2;
+  line-height: $line-height;
+}
+
+.title-3{
+  font-size: $title-3;
+  line-height: $line-height;
+}
+
+.title-4{
+  font-size: $title-4;
+  line-height: $line-height;
+}
+
+.title-5{
+  font-size: $title-5;
+  line-height: $line-height;
+}
+
+.title-6{
+  font-size: $title-6;
+  line-height: $line-height;
+  color: $accent-color;
+}
+/*================================>> hovers <<========================================*/
+a{
+    -webkit-transition: all 0.7s ease;
+    -moz-transition: all 0.7s ease;
+    -o-transition: all 0.7s ease;
+    transition: all 0.7s ease;
+}
+a:hover{
+    -webkit-transition: all 0.1s ease;
+    -moz-transition: all 0.1s ease;
+    -o-transition: all 0.1s ease;
+    transition: all 0.1s ease;
+}
+
+
+/*============================ Arctic modal =============================*/
+.arcticmodal-overlay,
+.arcticmodal-container { position: fixed; left: 0; top: 0; right: 0; bottom: 0; z-index: 1000; }
+.arcticmodal-container { overflow: auto; margin: 0; padding: 0; border: 0; border-collapse: collapse; }
+*:first-child+html .arcticmodal-container { height: 100% }
+.arcticmodal-container_i { height: 100%; margin: 0 auto; }
+.arcticmodal-container_i2 { padding: 24px; margin: 0; border: 0; vertical-align: middle; }
+.arcticmodal-error { padding: 20px; border-radius: 10px; background: #000; color: #fff; }
+.arcticmodal-loading { width: 80px; height: 80px; border-radius: 10px; background: #000 url(loading.gif) no-repeat 50% 50%; }
+
+
+/* ========================== OWL CAROUSEL =============================*/
+/* 
+ *  Core Owl Carousel CSS File
+ *  v1.3.2
+ */
+
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+/* display none until init */
+.owl-carousel{
+  display: none;
+  position: relative;
+  width: 100%;
+  -ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper{
+  display: none;
+  position: relative;
+  -webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+  -webkit-transition: height 500ms ease-in-out;
+  -moz-transition: height 500ms ease-in-out;
+  -ms-transition: height 500ms ease-in-out;
+  -o-transition: height 500ms ease-in-out;
+  transition: height 500ms ease-in-out;
+}
+  
+.owl-carousel .owl-item{
+  float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+  cursor: pointer;
+}
+.owl-controls {
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+/* mouse grab icon */
+.grabbing { 
+    cursor:url(grabbing.png) 8 8, move;
+}
+
+/* fix */
+.owl-carousel  .owl-wrapper,
+.owl-carousel  .owl-item{
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility:    hidden;
+  -ms-backface-visibility:     hidden;
+  -webkit-transform: translate3d(0,0,0);
+  -moz-transform: translate3d(0,0,0);
+  -ms-transform: translate3d(0,0,0);
+}
+
